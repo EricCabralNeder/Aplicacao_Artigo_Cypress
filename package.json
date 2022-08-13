@@ -1,0 +1,14 @@
+{
+  "name": "aplicacao_artigo_cypress",
+  "version": "1.0.0",
+  "description": "Aplicacao para o artigo da especializacao do Cesar",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Eric Neder",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^10.4.0"
+  }
+}
