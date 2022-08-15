@@ -9,8 +9,8 @@ class SignipPage{
 
     RealizarLogin(){
         cy.get('#user-name').type('standard_user')     
-        cy.get('id=password').type('secret_sauce ')
-        cy.get('id=login-button').click()
+        cy.get('#password').type('secret_sauce')
+        cy.get('#login-button').click()
     }
 
 }

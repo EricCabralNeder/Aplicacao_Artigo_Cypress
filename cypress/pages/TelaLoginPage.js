@@ -1,15 +1,20 @@
 
 
-describe('Compra rapida', ()=>{
-    it('pagina deve estar online', ()=>{
+class TelaLoginPage{
+
+    go(){
         cy.viewport(1044,900)
         cy.visit('https://www.saucedemo.com/')
-    })
-    it('Realizar Login', ()=>{
-        //cy.get('id=user-name').should('have.text', '')
+    }
 
-        cy.get('id=user-name').type('standard_user')     
-        cy.get('id=password').type('secret_sauce ')
-        cy.get('id=login-button').click()
-    })
-})
+    RealizarLogin(){
+        cy.viewport(1044,900)
+        cy.visit('https://www.saucedemo.com/')
+        cy.get('#user-name').type('standard_user') 
+        cy.get('#password').type('secret_sauce')
+        cy.get('#login-button').click()
+    }
+
+}
+
+export default TelaLoginPage;

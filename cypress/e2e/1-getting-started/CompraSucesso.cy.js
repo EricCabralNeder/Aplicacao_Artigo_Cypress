@@ -1,18 +1,27 @@
-//import SignipPage from '../../pages/TelaLoginPage'
-//import SignipPage from '../../pages/ProdutosPage'
-//import SignipPage from '../../pages/CarrinhoComprasPage'
-//import SignipPage from '../../pages/InformacoesCompraPage'
-//import SignipPage from '../../pages/VerificacaoCompraPage'
-import SignipPage from '../../pages/SignupPage'
+import TelaLoginPage from '../../pages/TelaLoginPage'
+import ProdutosPage from '../../pages/ProdutosPage'
+import CarrinhoComprasPage from '../../pages/CarrinhoComprasPage'
+import InformacoesCompraPage from '../../pages/InformacoesCompraPage'
+import VerificacaoCompraPage from '../../pages/VerificacaoCompraPage'
+//import SignipPage from '../../pages/SignupPage'
 
 
 
-var signup = new SignipPage()
+//var signup = new SignipPage()
+var login = new TelaLoginPage()
+var produtos = new ProdutosPage()
+var carrnho = new CarrinhoComprasPage()
+var cadastro = new InformacoesCompraPage()
+var compra = new VerificacaoCompraPage()
 
 
 
 
 it('displays two todo items by default', () => {
-    signup.go()
-    signup.RealizarLogin()
+
+    login.RealizarLogin()
+    produtos.Itens()
+    carrnho.CarrinhoCompras()
+    cadastro.informacoes()
+    compra.Finalizado(0)
   })
