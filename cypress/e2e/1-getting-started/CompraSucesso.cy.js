@@ -7,6 +7,7 @@ import VerificacaoCompraPage from '../../pages/VerificacaoCompraPage'
 
 
 
+
 //var signup = new SignipPage()
 var login = new TelaLoginPage()
 var produtos = new ProdutosPage()
