@@ -7,7 +7,7 @@ class TelaLoginPage{
         cy.visit('https://www.saucedemo.com/')
     }
 
-    RealizarLogin(){
+    realizarLogin(){
         context('Dado que acesso a página do buscador', () => {
             cy.viewport(1044,900)
             cy.visit('https://www.saucedemo.com/')
@@ -18,4 +18,4 @@ class TelaLoginPage{
     }
 }
 
-export default TelaLoginPage;
+export default new TelaLoginPage();

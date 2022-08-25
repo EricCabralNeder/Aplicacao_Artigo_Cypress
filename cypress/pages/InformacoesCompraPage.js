@@ -3,7 +3,7 @@
 
 class InformacoesCompraPage{
 
-    informacoes(){
+    preencherFormulario(){
         cy.get('#first-name').type('Testes')    
         cy.get('#last-name').type('Teste2')    
         cy.get('#postal-code').type('58059200')    
@@ -13,4 +13,4 @@ class InformacoesCompraPage{
 
 }
 
-export default InformacoesCompraPage;
+export default new InformacoesCompraPage();

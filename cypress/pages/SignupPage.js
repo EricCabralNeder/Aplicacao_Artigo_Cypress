@@ -15,4 +15,4 @@ class SignipPage{
 
 }
 
-export default SignipPage;
+export default new SignipPage();
